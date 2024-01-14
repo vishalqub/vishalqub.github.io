@@ -32,7 +32,7 @@ p {
     padding: 0 20px;
 }
 .text-primary {
-    color: Teal;
+    color: #C51A14;
 }
 .lead {
     font-size: 20px;
@@ -89,7 +89,7 @@ p {
 
 /* Navbar*/
 #navbar {
-    background: teal;
+    background: #C51A14;
     color: #fff;
     overflow: auto;
 }
@@ -115,7 +115,7 @@ p {
 }
 #navbar ul li a:hover,
 #navbar ul li a.current{
-    background: darkcyan;
+    background: maroon;
     color: white;
 }
 
@@ -285,7 +285,7 @@ p {
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: teal; /* Black*/
+    background-color: #C51A14; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -329,7 +329,7 @@ body {
  
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: teal;
+    background-color: #C51A14;
     overflow: hidden;
 }
  
@@ -356,14 +356,14 @@ body {
 }
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: darkcyan;
+    background-color: maroon;
     color: white;
     
 }
  
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: darkcyan;
+    background-color: maroon;
     color: black;
 }
 
@@ -397,7 +397,7 @@ a svg{
 }
  
 .menu{
-  background: teal;
+  background: #C51A14;
   display: flex;
   padding: 5px;
   width: 320px;
@@ -412,7 +412,7 @@ a svg{
     padding: 10px 2px;
     margin: 3px 0;
     text-decoration: none;
-    background: teal;
+    background: #C51A14;
  
     &:nth-child(1){
       margin-top: 0;
@@ -424,7 +424,7 @@ a svg{
     }
  
     &:hover{
-      background: teal;
+      background: #C51A14;
     }
   }
 }
