@@ -57,170 +57,388 @@
   display: block;
 }
     </style>
-<body>
-<header>
-   
-   <div id="sideNavigation" class="sidenav">
-       
-  <!--  <a href="index.html" style="text-align: center"> <img src="./img/self.jpg" alt="self" style="border-radius: 100%; width: 100px; height: 100px; text-align: center"></a>-->
-       <!--  <p class="logo"><a href="index.html">Vishal Sharma</a></p>-->
-       
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html" class="current">Home</a>
-        <a href="research.html">Research</a>
-                <a href="teaching.html">Teaching</a>    
-               <a href="publications.html">Publications</a>
-                 <a href="outreach.html">Outreach</a> 
-                <a href="services.html">Services</a> 
+    <body>
+        <header>
+
+            <div id="sideNavigation" class="sidenav">
+
+                <!--  <a href="index.html" style="text-align: center"> <img src="./img/self.jpg" alt="self" style="border-radius: 100%; width: 100px; height: 100px; text-align: center"></a>-->
+                <!--  <p class="logo"><a href="index.html">Vishal Sharma</a></p>-->
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" class="current">Home</a>
+                <a href="research.html">Research</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="publications.html">Publications</a>
+                <a href="outreach.html">Outreach</a>
+                <a href="services.html">Services</a>
                 <a href="resources.html">Resources</a>
                 <a href="people.html">People</a>
                 <a href="contact.html">Contact</a><br>
-   
-<!--
-      <div  id="banner" style="overflow: hidden; float: left">
-          
-           <div class="image-div">
-             <a href="https://www.linkedin.com/in/vishal-sharma-ph-d-a1b1292a/" target="_blank"> <img src="./img/smalllinkedin.png" alt="self" style="border-radius: 100%; width: 40px; height: 40px;  text-align: center"> </a>   
-       </div>
-               <div class="image-div">
-           <a href="https://orcid.org/0000-0001-7470-6506" target="_blank"> <img src="./img/smallorcid.png" alt="self" style="border-radius: 100%; width: 40px; height: 40px; text-align: center"></a>          
-          </div>
+
+                <!--
+                <div  id="banner" style="overflow: hidden; float: left">
+
+                     <div class="image-div">
+                       <a href="https://www.linkedin.com/in/vishal-sharma-ph-d-a1b1292a/" target="_blank"> <img src="./img/smalllinkedin.png" alt="self" style="border-radius: 100%; width: 40px; height: 40px;  text-align: center"> </a>
+                 </div>
+                         <div class="image-div">
+                     <a href="https://orcid.org/0000-0001-7470-6506" target="_blank"> <img src="./img/smallorcid.png" alt="self" style="border-radius: 100%; width: 40px; height: 40px; text-align: center"></a>
+                    </div>
+                             <div class="image-div">
+                     <a href="https://scholar.google.com/citations?user=g2B3SKAAAAAJ&hl=en"  target="_blank"> <img src="./img/scholarsmall.png" alt="self"  style="border-radius: 100%; width: 40px; height: 40px; text-align: center"> </a>    <br>
+                    </div>
                    <div class="image-div">
-           <a href="https://scholar.google.com/citations?user=g2B3SKAAAAAJ&hl=en"  target="_blank"> <img src="./img/scholarsmall.png" alt="self"  style="border-radius: 100%; width: 40px; height: 40px; text-align: center"> </a>    <br>       
-          </div>
-         <div class="image-div">
 
-             <a href="https://www.researchgate.net/profile/Vishal_Sharma27" target="_blank"> <img src="./img/smallresearchgate.png" alt="self"  style="border-radius: 200%; width: 40px; height: 40px; text-align: center"></a>            
+                       <a href="https://www.researchgate.net/profile/Vishal_Sharma27" target="_blank"> <img src="./img/smallresearchgate.png" alt="self"  style="border-radius: 200%; width: 40px; height: 40px; text-align: center"></a>
+                </div>
+                                 <div class="image-div">
+                                     <a href="https://publons.com/researcher/1433024/vishal-sharma/" target="_blank"> <img src="./img/smallpublon.png" alt="self"  style="border-radius: 100%; width: 40px; height: 40px; text-align: center"> </a>
+                     </div>
+                        <div class="image-div">
+                       <a href="https://github.com/vshalsharma" target="_blank"> <img src="./img/smallgithub.png" alt="self"  style="border-radius: 100%; width: 40px; height: 40px; text-align: center"> </a>
+                         </div>
+
+                  </div>
+            -->
+                <style>
+                    .image-div {
+                        float: left;
+                        margin-right: 10px;
+                        max-width: 25%;
+                        max-height: 25%;
+                    }
+                </style>
+
+            </div>
+
+
+            <nav class="topnav">
+                <a href="#" onclick="openNav()">
+                    <svg width="30" height="30" id="icoOpen">
+                        <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+                        <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+                        <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+                    </svg>
+
+                </a>
+
+                <a href="index.html">Vishal Sharma, PhD, FHEA</a>
+            </nav>
+        </header>
+
+        <script>
+            function openNav() {
+                document.getElementById("sideNavigation").style.width = "300px";
+                document.getElementById("main").style.marginLeft = "300px";
+            }
+
+            function closeNav() {
+                document.getElementById("sideNavigation").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+
+       <div class="clr"></div>
+
+<section id="about-info" class="py-1" style="background-color: aliceblue;">
+  <div class="container" style="max-width: 1000px; margin: auto;">
+    <div>
+      <h2 class="l-heading" style="color: #004d66; font-size: 2.2rem; margin-bottom: 1em;">
+        <h2 style="color: teal; margin-bottom: 1em; text-align: center">Research Statement</h2>
+      </h2>
+
+      <div style="
+        background-color: aliceblue;
+        border-left: 5px solid #007B8A;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        padding: 2em;
+        border-radius: 8px;
+      ">
+        <p style="text-align: justify; font-size: 1.05rem; line-height: 1.8; color: #333;">
+          My research focuses on broader perspectives of Cyber Defence and Secure Computing, with an emphasis on Network and Mobile Internet Security, Unmanned Aerial Systems, Distributed Ledger Technology, and Digital Twins. I'm particularly interested in adversarial and threat modelling, formal methods of verification, simulations, and hardware-in-the-loop technologies associated with these themes. <br><br>
+          I have a strong track record of high-quality research publications, project deliveries, and the development of simulators and live systems. I am deeply motivated to address the challenges of secure and responsible computing, particularly through behavior-verification of computing infrastructure.
+        </p>
       </div>
-                       <div class="image-div">
-                           <a href="https://publons.com/researcher/1433024/vishal-sharma/" target="_blank"> <img src="./img/smallpublon.png" alt="self"  style="border-radius: 100%; width: 40px; height: 40px; text-align: center"> </a>     
-           </div>
-              <div class="image-div">
-             <a href="https://github.com/vshalsharma" target="_blank"> <img src="./img/smallgithub.png" alt="self"  style="border-radius: 100%; width: 40px; height: 40px; text-align: center"> </a>       
-               </div>  
-           
-        </div>
-  -->
-        <style>
-       .image-div{
-  float:left;
-  margin-right:10px;
-  max-width: 25%;
-  max-height: 25%;
-}
-       </style>
-       
     </div>
-    
- 
-<nav class="topnav">
-  <a href="#" onclick="openNav()">
-    <svg width="30" height="30" id="icoOpen">
-        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
-        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
-        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
-    </svg>
-        
-  </a>
-   
-     <a href="index.html">Vishal Sharma, PhD, FHEA</a>
-</nav>
-</header>
-    
-    <script>
-function openNav() {
-    document.getElementById("sideNavigation").style.width = "300px";
-    document.getElementById("main").style.marginLeft = "300px";
-}
- 
-function closeNav() {
-    document.getElementById("sideNavigation").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
-</script>
-    
-      <div class="clr"></div>
-<section id="about-info" class="py-1"  style="background-color: aliceblue">
-    <div class="container" >
-        <div style="background-color: aliceblue">
-           <p class="l-heading"> <span class="text-primary">Research Statement</span></p>
-            <div class="testimonial bg-primary" style="background-color: aliceblue" >
-              <p style="margin-left: 0.5em;padding: 0 0 0 0; text-align: justify">
-                My research focuses on broader perspectives of Cyber Defence and Security with a focus on Network Security, Unmanned Aerial Systems, Distributed Ledger Technology and Digital Twins. I am interested in adversarial modelling, threat intelligence, formal methods of verification, simulations, and hardware-in-the-loop associated with the above-mentioned themes. I have a track record of high-quality research publications, project participation, and the development of simulators and live systems, and I am ambitious about answering concerns of secure and responsible computing through behaviour-verification of computing-infrastructure.<br>
-               </p>    
-                       
-            </div>
-            
-           <br>
-            <br>
-        </div>
-       
-    </div>
+  </div>
 </section>
-    
-  <div class="clr"></div>
-    
-<section id="about-info" class="py-1" >
-    <div class="container">
-        <div>
-            <p class="l-heading"><span class="text-primary">Research Interests</span></p>
-            
-            <div class="testimonial bg-primary">
-              <p style="margin-left: 0.5em;padding: 0 0 0 0; text-align: justify-all">
-               &#8259;Cyber Defence and AI Security <br>
-             &#8259;Unmanned Aerial Vehicles <br>
-                  &#8259;Network Security <br>
-&#8259;Distributed Ledger Technology <br>
-&#8259;Digital Twins
 
-                </p>    
-                       
-            </div>
-            
-           
-        </div>
+<div class="clr"></div>
+
+
+       <section id="research-interests" style="background-color: white; padding: 2em 1em;">
+  <div class="container" style="text-align: center;">
+    <h2 style="color: teal; margin-bottom: 1em;">Research Interests</h2>
+    <div class="interests-banner" style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: center;">
+      <div class="interest-badge">Cyber Defence & AI Security</div>
+      <div class="interest-badge">Unmanned Aerial Vehicles</div>
+      <div class="interest-badge">Network & Mobile Internet Security</div>
+      <div class="interest-badge">Distributed Ledger Technology</div>
+      <div class="interest-badge">Digital Twins</div>
     </div>
-    
+  </div>
 </section>
-    
-     <div class="clr"></div>
-<section id="about-info" class="py-1"  style="background-color: aliceblue">
-    <div class="container" >
-        <div style="background-color: aliceblue">
-           <p class="l-heading"> <span class="text-primary">Research Projects</span></p>
-            <div class="testimonial bg-primary" style="background-color: aliceblue" >
-              <p style="margin-left: 0.5em;padding: 0 0 0 0; text-align: justify">
-             <span>&#8667;</span> <strong>DCMS (QUB, UK)</strong>, “Shaping the Metaverse, Phase 2,” Role: CO-I, Status: Ongoing.<br>
-              <span>&#8667;</span> <strong>DCMS (QUB, UK)</strong>, “TUDOR: Towards Ubiquitous 3D Open Resilient Network,” Role: CO-I, Status: Ongoing.<br>
-             <span>&#8667;</span> <strong>DASA-CHERI (QUB, UK)</strong>, “Exploring operational capabilities of Arm Morello for security configurations of Unmanned Aerial Vehicles,” Role: PI, Status: Ongoing.<br>
-              <span>&#8667;</span> <strong>NICYBER (QUB, UK)</strong>, “NICYBER2025,” Role: CO-I, Status: Ongoing.<br>
-               <span>&#8667;</span> <strong>Horizon (UKRI) (QUB, UK)</strong>, “Autonomous Multi-Format In-Situ Observatory for Atmospheric Carbon Dioxide and Methane Monitoring in Permafrost, Deserts & Wetlands (MISO),” Role: PI, Status: Ongoing.<br>
-               <span>&#8667;</span> <strong>PwC (QUB, UK)</strong>, “PWC Research and Development Centre,” Role: CO-I, Status: Ongoing.<br>
-               <span>&#8667;</span> <strong>Innovate UK (QUB, UK)</strong>, “D-Ron: Rogue behaviour detection in the drone swarms using digital twins (Phase-2),” Role: PI, Status: Completed.<br>
-               <span>&#8667;</span> <strong>VIAVI (QUB, UK)</strong>, “Digital Twin for 6G Virtualised Radio Access Network,” Role: CO-I, Status: Completed.<br>
-               <span>&#8667;</span> <strong>Innovate UK (QUB, UK)</strong>, “D-Ron: Rogue behaviour detection in the drone swarms using digital twins,” Role: PI, Status: Completed.<br>
-                <span>&#8667;</span> <strong>Internal (QUB, UK)</strong>, “School Transition Fund - Innovation in Teaching,” Role: PI, Status: Completed.<br>
-                <span>&#8667;</span> <strong> Internal (QUB, UK)</strong>, “Research Start-up Seed Fund,” Role: PI, Status: Completed.<br>
-               <span>&#8667;</span> <strong>MoE-SUTD (Singapore)</strong>, “Future-proof blockchains: concurrency and scalability aspects,” Role: Research Fellow, Status: Completed.<br>
-               <span>&#8667;</span> <strong>IITP-AFOSR (US-Korea)</strong>, “Malicious behaviour detection based on rule specification for cyber-physical systems with embedded IoT,” Role: Research Assistant Professor, Status: Completed.<br>
-              <span>&#8667;</span> <strong>MSIT (South Korea)</strong>, "Development of 20Gbps P2MP wireless backhaul for 5G convergence service," Role: Research Assistant Professor, Status: Completed.<br>
-               <span>&#8667;</span> <strong>NRF (South Korea)</strong>, “An Adaptive Security Protocol for Fast and Secure Handover in 5G HetNet based Distributed IP Mobility Management Environments,” Role: Post-doctoral Fellow and Research Assistant Professor, Status: Completed.<br>
-               <span>&#8667;</span> <strong>ETRI (South Korea)</strong>, “A Study on DTLS Security for Trusted IoT Devices in LoRaWAN Network Environment,” Role: Post-doctoral Fellow, Status: Completed.<br>
-              <span>&#8667;</span> <strong>ETRI (South Korea)</strong>, “A Study on the Method of Mobile Xhaul Radio Link Information Protection,” Role: Post-doctoral Fellow, Status: Completed.<br>
-               <span>&#8667;</span> <strong>ETRI (South Korea)</strong>, “A Study on a Secure and Effective Route Optimization Protocol between a Mobile Device and a Home IoT Device in Smart Home Environments,” Role: Post-doctoral Fellow, Status: Completed.<br>
-               </p>    
-            </div>
-            
-           <br>
-            <br>
-        </div>
+
+<style>
+  .interest-badge {
+    background-color: teal;
+    color: white;
+    padding: 0.75em 1.25em;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+
+  .interest-badge:hover {
+    transform: translateY(-3px);
+    background-color: #006666;
+  }
+
+  @media (max-width: 600px) {
+    .interest-badge {
+      font-size: 0.9rem;
+      padding: 0.6em 1em;
+    }
+  }
+</style>
+        
+        
+        
+        <div class="clr"></div>
+        
+
+         <section id="about-info" class="py-1" style="background-color: aliceblue">
        
-    </div>
-</section>
- 
-  
-<footer id="main-footer" style=" width: 100%; bottom: 0; left: 0">
-    <p> Copyright &copy; <script type="text/javascript">document.write( new Date().getFullYear() );</script>. Vishal Sharma. All Rights Reserved.</p>
-</footer>
-</body>
+        <section id="projects-with-timeline" style="background: aliceblue; padding: 2em; max-width: 1000px; margin: auto; font-family: Arial, sans-serif;">
+    
+            <h2 style="color: teal; text-align: center; margin-bottom: 1.5em;">Research Projects (2016 - Present (P))</h2>
+
+            <div class="grid-container" style="
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2em;
+    position: relative;
+  ">
+                <!-- Cards will be inserted here by JS -->
+            </div>
+
+            <style>
+                .card {
+                    background: white;
+                    border-radius: 8px;
+                    padding: 1.5em 2em 1.5em 4.5em;
+                    position: relative;
+                    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+                    transition: box-shadow 0.3s ease;
+                }
+
+                    .card:hover {
+                        box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+                    }
+                    /* Timeline bar */
+                    .card::before {
+                        content: "";
+                        position: absolute;
+                        left: 1.5em;
+                        top: 0;
+                        bottom: 0;
+                        width: 4px;
+                        background: teal;
+                        border-radius: 2px;
+                        z-index: 0;
+                    }
+                .animated-dots {
+     background-image: radial-gradient(teal 40%, transparent 41%);
+    background-size: 12px 6px;
+    background-repeat: repeat-x;
+    animation: moveDots 1s linear infinite;
+}
+/* Solid line for completed projects */
+.solid-line {
+    background-color: teal;
+}
+
+   .year-bubbles-inline {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.75em;
+    position: relative;
+}
+
+.year-bubble {
+    width: 50px;
+    height: 50px;
+    background: teal;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.2);
+    user-select: none;
+}
+
+.year-bubble.year2 {
+    background: #006666;
+}
+
+.dotted-line-container {
+    position: relative;
+    flex-grow: 1;
+    height: 24px; /* height to fit label and line */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.duration-label {
+    position: absolute;
+    top: -14px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #333;
+   
+    padding: 0 4px;
+    z-index: 2;
+}
+
+.dotted-line {
+   width: 100%;
+    height: 3px;
+    border-radius: 3px;
+}
+
+@keyframes moveDots {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 10px 0;
+    }
+}
+
+
+
+                .card h3 {
+                    margin-top: 0;
+                    margin-bottom: 0.5em;
+                    color: #004d4d;
+                }
+
+                .card p {
+                    margin: 0.25em 0;
+                    color: #333;
+                    font-size: 0.95rem;
+                }
+
+                .status {
+                    display: inline-block;
+                    margin-top: 0.7em;
+                    padding: 0.25em 0.75em;
+                    font-size: 0.85rem;
+                    border-radius: 12px;
+                    font-weight: 600;
+                }
+
+                    .status.ongoing {
+                        background-color: #90ee90;
+                        color: #004d00;
+                    }
+
+                    .status.completed {
+                        background-color: #ddd;
+                        color: #555;
+                    }
+                
+               .locationcl-label {
+    position: absolute;
+    left: 1em;
+    top: 70%;
+    transform: translateY(-50%) rotate(-90deg);
+    transform-origin: left center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: teal;
+    opacity: 0.8;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+                .card {
+    padding-left: 6em; /* increase left padding to make space for rotated label */
+    /* rest stays the same */
+}
+
+            </style>
+
+            <script>
+                const projects = [
+                    { year1: 2025, year2: "P", location: "Northern Ireland, United Kingdom", univerity: "QUB", title: "Invest NI", description: "Traceable and Auditable Procurement for Net-Zero Processes (Phase - 1)", role: "PI", status: "ongoing" },
+                    { year1: 2025, year2: "P", location: "Northern Ireland, United Kingdom", univerity: "QUB", title: "ESRC-POP", description: "Augmenting Net-Zero Traceability with Agentic AI (Early Exploration)", role: "PI", status: "ongoing" },
+                    { year1: 2025, year2: "P", location: "Northern Ireland, United Kingdom - EU", univerity: "QUB", title: "MSCA Doctoral Networks - European Commission", description: "Advanced Network Connectivity using Harmonious Optical and Radio Technologies (ANCHOR)", role: "PhD Supervisor (50%)", status: "ongoing" },
+                    { year1: 2024, year2: 2025, location: "Northern Ireland, United Kingdom", univerity: "QUB", title: "Innovate UK", description: "RapidRANDefender (Phase 2 of QRICSec: AI security for Open networks", role: "CO-I: Leading WP on security protocol", status: "completed" },
+                    { year1: 2024, year2: 2024, location: "Northern Ireland, United Kingdom", univerity: "QUB", title: "Innovate UK", description: "QRICSec: AI security for Open Networks", role: "CO-I: Leading WP on security protocol", status: "completed" },
+                    { year1: 2024, year2: "P", location: "Northern Ireland, United Kingdom", univerity: "QUB", title: "DCMS", description: "Shaping the Metaverse, Phase 2", role: "CO-I: Leading WP on DLT", status: "ongoing" },
+                    { year1: 2023, year2: 2025, location: "Northern Ireland, United Kingdom", univerity: "QUB", title: "DCMS", description: "TUDOR: Towards Ubiquitous 3D Open Resilient Network", role: "CO-I: Security lead in the consortium", status: "completed" },
+                    { year1: 2023, year2: 2024, location: "Northern Ireland, United Kingdom", univerity: "QUB", title: "DASA-CHERI", description: "Exploring operational capabilities of Arm Morello for security configurations of Unmanned Aerial Vehicles", role: "PI", status: "completed" },
+                    { year1: 2025, year2: "P", location: "Northern Ireland, United Kingdom", univerity: "QUB", title: "NICYBER", description: "NICYBER2025", role: "CO-I: Leading projects with an SME and a Unicorn", status: "ongoing" },
+                    { year1: 2024, year2: "P", location: "Northern Ireland, United Kingdom - EU", univerity: "QUB", title: "Horizon (UKRI, European Commission)", description: "Autonomous Multi-Format In-Situ Observatory for Atmospheric Carbon Dioxide and Methane Monitoring in Permafrost, Deserts & Wetlands (MISO)", role: "PI", status: "ongoing" },
+                    { year1: 2023, year2: "P", location: "Northern Ireland, United Kingdom", univerity: "QUB", title: "PwC", description: "PWC Research and Development Centre", role: "CO-I: Leading projects on Blockchain, Supply Chain Twins, Bid-free procurement and Agentic AI", status: "ongoing" },
+                    { year1: 2023, year2: 2023, location: "Northern Ireland, United Kingdom", univerity: "QUB", title: "Praeferre", description: "Security Consultancy", role: "PI", status: "completed" },
+                    { year1: 2022, year2: 2023, location: "Northern Ireland, United Kingdom", univerity: "QUB", title: "Innovate UK", description: "D-Ron: Rogue behaviour detection in the drone swarms using digital twins (Phase-2)", role: "PI", status: "completed" },
+                    { year1: 2022, year2: 2023, location: "Northern Ireland, United Kingdom", univerity: "QUB", title: "VIAVI", description: "Digital Twin for 6G Virtualised Radio Access Network", role: "CO-I: WP lead on digital twins", status: "completed" },
+                    { year1: 2021, year2: 2021, location: "Northern Ireland, United Kingdom", univerity: "QUB", title: "Innovate UK", description: "D-Ron: Rogue behaviour detection in the drone swarms using digital twins", role: "PI", status: "completed" },
+                    { year1: 2021, year2: 2021, location: "Northern Ireland, United Kingdom", univerity: "QUB", title: "Internal", description: "School Transition Fund - Innovation in Teaching", role: "PI", status: "completed" },
+                    { year1: 2020, year2: 2023, location: "Northern Ireland, United Kingdom", univerity: "QUB", title: "Internal", description: "Research Start-up Seed Fund", role: "PI", status: "completed" },
+                    { year1: 2019, year2: 2020, location: "Singapore", univerity: "SUTD, Singapore", title: "MoE", description: "Future-proof blockchains: concurrency and scalability aspects", role: "Research Fellow", status: "completed" },
+                    { year1: 2019, year2: 2020, location: "South Korea - USA", univerity: "SCH University, South Korea and Virginia Tech University, US", title: "IITP-AFOSR", description: "Malicious behaviour detection based on rule specification for cyber-physical systems with embedded IoT", role: "Research Assistant Professor", status: "completed" },
+                    { year1: 2018, year2: 2019, location: "South Korea", univerity: "SCH University, South Korea", title: "MSIT", description: "Development of 20Gbps P2MP wireless backhaul for 5G convergence service", role: "Research Assistant Professor", status: "completed" },
+                    { year1: 2018, year2: 2019, location: "South Korea", univerity: "SCH University, South Korea", title: "NRF", description: "An Adaptive Security Protocol for Fast and Secure Handover in 5G HetNet based Distributed IP Mobility Management Environments", role: "Research Assistant Professor", status: "completed" },
+                    { year1: 2017, year2: 2018, location: "South Korea", univerity: "SCH University, South Korea", title: "ETRI", description: "A Study on DTLS Security for Trusted IoT Devices in LoRaWAN Network Environment", role: "Post-doctoral Fellow", status: "completed" },
+                    { year1: 2017, year2: 2018, location: "South Korea", univerity: "SCH University and Soongsil University, South Korea", title: "ETRI", description: "A Study on the Method of Mobile Xhaul Radio Link Information Protection", role: "Post-doctoral Fellow", status: "completed" },
+                    { year1: 2016, year2: 2017, location: "South Korea", univerity: "SCH University, South Korea", title: "ETRI", description: "A Study on a Secure and Effective Route Optimization Protocol between a Mobile Device and a Home IoT Device in Smart Home Environments", role: "Post-doctoral Fellow", status: "completed" },
+                ];
+
+                const container = document.querySelector('.grid-container');
+
+                projects.forEach(proj => {
+                    const card = document.createElement('div');
+                    card.classList.add('card');
+                    card.innerHTML = `
+                    <div class="locationcl-label">${proj.location}</div>
+                     <h3>${proj.description}</h3>
+                    <p><strong>Funder: </strong>${proj.title}</p>
+                    <p><strong>Location: </strong>${proj.univerity}</p>
+                    <p><strong>Role:</strong> ${proj.role}</p>
+                    <span class="status ${proj.status === 'ongoing' ? 'ongoing' : 'completed'}">${proj.status.charAt(0).toUpperCase() + proj.status.slice(1)}</span>
+                <div class="year-bubbles-inline">
+                <div class="year-bubble">${proj.year1}</div>
+                <div class="dotted-line-container">
+      <span class="duration-label">Duration</span>
+     <div class="dotted-line ${proj.status === 'ongoing' ? 'animated-dots' : 'solid-line'}"></div>
+ </div>
+                <div class="year-bubble year2">${proj.year2}</div>
+                </div>
+                 `;
+                    container.appendChild(card);
+                });
+            </script>
+        </section>
+
+        </section>
+
+        <footer id="main-footer" style=" width: 100%; bottom: 0; left: 0">
+            <p>
+                Copyright &copy;
+                <script type="text/javascript">document.write(new Date().getFullYear());</script>. Vishal Sharma. All Rights Reserved.
+            </p>
+        </footer>
+    </body>
 </html>
