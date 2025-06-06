@@ -140,84 +140,231 @@ function closeNav() {
     
     
   <div class="clr"></div>
+<style>
+/* Card Layout */
+#about-info {
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #f7f9fc;
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  width: calc(50% - 1rem); /* Two cards per row */
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.card ul {
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.card a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: one card per row on small screens */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+</style>
+
+<section id="about-info" style="background-color: #f3f4f6">
+  <div class="container" style="background-color: #f3f4f6">
     
-<section id="about-info" class="py-1" >
-    <div class="container">
-        <div>
-            <p class="l-heading"><span class="text-primary">Teaching</span></p>
-             <div class="testimonial bg-primary" >
-             <h4>  <img src="./img/book.png" alt="work" style="width: 50px; height: 30px; vertical-align:middle">Associate Professor, Queen's University Belfast [August 2023 -]</h4>           
-                           <p style="margin-left: 4.5em;padding: 0 0 0 0;">
-                               &#8259;<a href="csc2060.html" style="color: cornflowerblue" >CSC2060: Theory of Computation (Level-2, AY 2023/24 - SPR) [cohort >200]</a><br>
-                               &#8259;CSC3002: Supervisor (7 CS Projects, AY 2023/24)<br>
-        
-                 </p>    
-                       
-                   <h4>  <img src="./img/book.png" alt="work" style="width: 50px; height: 30px; vertical-align:middle">Assistant Professor, Queen's University Belfast [September 2020 - July 2023]</h4>           
-                           <p style="margin-left: 4.5em;padding: 0 0 0 0;">
-                               &#8259;<a href="csc2060.html" style="color: cornflowerblue" >CSC2060: Theory of Computation (Level-2, AY 2022/23 - SPR) [cohort >200]</a><br>
-                               &#8259;CSC4006: Supervisor (1 Research and Development Project, AY 2022/23)<br>
-                               &#8259;CSC3002: Supervisor (6 CS Projects, AY 2022/23)<br>
-                               
-                               &#8259;<a href="csc2060.html" style="color: cornflowerblue" >CSC2060: Theory of Computation (Level-2, AY 2021/22 - SPR) [cohort >200]</a><br>
-                               &#8259;CSC4006: Supervisor (3 Research and Development Projects, AY 2021/22)<br>
-                               &#8259;CSC3002: Supervisor (6 CS Projects, AY 2021/22)<br>
-                               
-                               &#8259;<a href="csc2060.html" style="color: cornflowerblue" >CSC2060: Theory of Computation (Level-2, AY 2020/21 - SPR) [cohort >200]</a><br>
-                               &#8259;CSC3002: Supervisor (5 CS Projects, AY 2020/21)
-                 </p>    
-                       
-            </div>
-            
-             <div class="testimonial bg-primary" >
-           
-                   <h4>  <img src="./img/book.png" alt="work" style="width: 50px; height: 30px; vertical-align:middle">Research Assistant Professor, Soonchunhyang University, South Korea [January 2018 - March 2019]</h4>           
-                           <p style="margin-left: 4.5em;padding: 0 0 0 0;">
-                            &#8259;Formal Verification and 5G Security (MobiSec Lab Subject)<br>
-                            &#8259;Drone Communications and Simulations (MobiSec Lab Subject)
+              <p class="l-heading"  style="text-align: center"><span class="text-primary">Teaching Experience</span><br><br></p>
 
-                           </p>    
-                       
-            </div>
-            
-            <div class="testimonial bg-primary" >
-           
-                   <h4>  <img src="./img/book.png" alt="work" style="width: 50px; height: 30px; vertical-align:middle">Lecturer, Computer Science and Engineering Department, Thapar University, India [April 2016 - October 2016]</h4>           
-                           <p style="margin-left: 4.5em;padding: 0 0 0 0;">
-                            &#8259;UTA-011: Engineering Design-III (Programming with Arduino) <br>
-                            &#8259;UCS-303: Operating System (Summer Course)
+    <div class="card-grid">
 
-                           </p>    
-                       
-            </div>
-            
-            <div class="testimonial bg-primary" >
-           
-                   <h4>  <img src="./img/book.png" alt="work" style="width: 50px; height: 30px; vertical-align:middle"> Teaching Assistant, Computer Science and Engineering Department, Thapar University, India [July 2013 - June 2015]</h4>           
-                           <p style="margin-left: 4.5em;padding: 0 0 0 0;">
-                            &#8259;UTA-004: Information Technology [January’15-June’15]<br>
-  &#8259;UCS-403: Analysis and Design of Information System [January’15-June’15]<br>
-  &#8259;UCS-703: Artificial Intelligence and its applications [July’14-December’14]<br>
-  &#8259;PIS-105: Secure Coding [July’14-December’14]<br>
-  &#8259;UCS-503: Computer Graphics [July’14-December’14]<br>
-  &#8259;UCS-404: Principles of Programming Language [January’14-June’14]<br>
-  &#8259;UCS-501: Algorithms [July’13-December’13]<br>
-  &#8259;UCS-753: Software Design and Construction [July’13-December’13]<br><br><br><br>
+      <div class="card">
+        <h4>Associate Professor, Queen's University Belfast <span>[Aug 2023 - Present]</span></h4>
+        <ul>
+          <li><a href="csc2060.html">CSC2060: Theory of Computation (2024/25 – SPR, >260 students)</a></li>
+          <li>CSC4006: Supervisor (1 R&D Project, 2024/25)</li>
+          <li>CSC3002: Supervisor (6 CS Projects, 2024/25)</li>
+          <li><a href="csc2060.html">CSC2060: Theory of Computation (2023/24 – SPR, >200 students)</a></li>
+          <li>CSC3002: Supervisor (7 CS Projects, 2023/24)</li>
+        </ul>
+      </div>
 
-                           </p>    
-                       
-            </div>
-            
-        </div>
-       
+      <div class="card">
+        <h4>Assistant Professor, Queen's University Belfast <span>[Sep 2020 – Jul 2023]</span></h4>
+        <ul>
+          <li><a href="csc2060.html">CSC2060: Theory of Computation (2022/23 – SPR)</a></li>
+          <li>CSC4006: Supervisor (1 R&D Project, 2022/23)</li>
+          <li>CSC3002: Supervisor (6 CS Projects, 2022/23)</li>
+          <li><a href="csc2060.html">CSC2060: Theory of Computation (2021/22 – SPR)</a></li>
+          <li>CSC4006: Supervisor (3 R&D Projects, 2021/22)</li>
+          <li>CSC3002: Supervisor (6 CS Projects, 2021/22)</li>
+          <li><a href="csc2060.html">CSC2060: Theory of Computation (2020/21 – SPR)</a></li>
+          <li>CSC3002: Supervisor (5 CS Projects, 2020/21)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>Research Assistant Professor, Soonchunhyang University <span>[Jan 2018 – Mar 2019]</span></h4>
+        <ul>
+          <li>Formal Verification and 5G Security (MobiSec Lab)</li>
+          <li>Drone Communications and Simulations (MobiSec Lab)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>Lecturer, Thapar University <span>[Apr 2016 – Oct 2016]</span></h4>
+        <ul>
+          <li>UTA-011: Engineering Design-III (Arduino)</li>
+          <li>UCS-303: Operating System (Summer Course)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>Teaching Assistant, Thapar University <span>[Jul 2013 – Jun 2015]</span></h4>
+        <ul>
+          <li>UTA-004: Information Technology</li>
+          <li>UCS-403: Analysis and Design of Information System</li>
+          <li>UCS-703: Artificial Intelligence</li>
+          <li>PIS-105: Secure Coding</li>
+          <li>UCS-503: Computer Graphics</li>
+          <li>UCS-404: Principles of Programming Language</li>
+          <li>UCS-501: Algorithms</li>
+          <li>UCS-753: Software Design and Construction</li>
+        </ul>
+      </div>
+
     </div>
-    <div>
-    <br><br></div>
+  </div>
 </section>
+
+  <style>
     
+        .footer-banner {
+  background-color: #004466;  /* deep teal */
+  color: #e0eaf1;             /* light bluish text */
+  padding: 3rem 1.5rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1 1 300px; /* flexible width but min 300px */
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #66b2ff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #e0eaf1;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #a8d0ff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #336699;
+  font-size: 0.9rem;
+  color: #a8c6dc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
   
-<footer id="main-footer" style=" width: 100%; bottom: 0; left: 0">
-    <p> Copyright &copy; <script type="text/javascript">document.write( new Date().getFullYear() );</script>. Vishal Sharma. All Rights Reserved.</p>
+  .footer-section {
+    max-width: 100%;
+  }
+  
+  iframe {
+    height: 200px;
+  }
+}
+
+    </style>
+  
+   <footer id="main-footer" style="background-color: #003f4d; color: #e0eaf1; padding: 3rem 1.5rem; font-family: Arial, sans-serif;">
+  <div class="footer-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between;">
+
+    <div class="footer-section" style="flex: 1 1 250px; min-width: 250px;">
+      <h3 style="margin-bottom: 1rem; color: #a4cfe0;">Address</h3>
+       
+                Computer Science Building <br>
+                16A Malone Road<br>
+                Belfast, BT9 5BN<br>
+                Northern Ireland, UK <br>
+    </div>
+
+    <div class="footer-section" style="flex: 1 1 300px; min-width: 300px;">
+      <h3 style="margin-bottom: 1rem; color: #a4cfe0;">Location</h3>
+      <!-- Replace the iframe src with your actual map location -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2312.188623892509!2d-5.93804068454671!3d54.58305038025675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sComputer%20Science%20Building%2016A%20Malone%20Road%20Belfast%20BT9%205BN!5e0!3m2!1sen!2suk!4v1599392541949!5m2!1sen!2suk"
+        style="width: 100%; height: 180px; border: none; border-radius: 8px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="footer-section" style="flex: 1 1 250px; min-width: 250px;">
+      <h3 style="margin-bottom: 1rem; color: #a4cfe0;">Contact</h3>
+      <p>Email: <a href="mailto:#" style="color: #7ec8e3; text-decoration: none;"> v [dot] &lt;lastname&gt; [at] qub [dot] ac [dot] uk</a></p>
+       <p>Website: <a href="https://vishalqub.github.io" target="_blank" style="color: #7ec8e3; text-decoration: none;">vishalqub.github.io</a></p>
+    </div>
+
+  </div>
+  <div style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #89b3d1;">
+    &copy; <script>document.write(new Date().getFullYear());</script> Vishal Sharma. All Rights Reserved.
+  </div>
 </footer>
+
 </body>
 </html>

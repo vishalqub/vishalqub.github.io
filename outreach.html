@@ -139,73 +139,238 @@ function closeNav() {
 }
 </script>
     
+    <style>
+        
+        .year-banner {
+  background-color: white;       /* Or a brand color */
+  color: teal;
+  padding: 0.5em 1em;
+  margin: 2em 0 1em 0;
+  font-size: 1.25em;
+  font-weight: bold;
+  border-left: 6px solid teal;  /* Accent stripe */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.outreach-list {
+  list-style: none;
+  padding-left: 1em;
+}
+
+.outreach-list li {
+  margin-bottom: 0.75em;
+  position: relative;
+  padding-left: 1.2em;
+}
+
+.outreach-list li::before {
+  content: "↠";
+  position: absolute;
+  left: 0;
+  color: teal;  /* Match accent */
+}
+
+    </style>
     
   <div class="clr"></div>
-    
-<section id="about-info" class="py-1">
-    <div class="container" style="text-align: justify">
-        <div>
-             
-            <p class="l-heading"><span class="text-primary" >Outreach</span></p>
-            <div class="testimonial bg-primary">
-              <p style="margin-left: 0.5em;padding: 0 0 0 0; text-align: justify">
-                 <span>&#8667;</span> Panel (Frontier AI Safety and Policy Panel - Perspectives from the UK) - Vishal Sharma - MIT Boston, USA (October 2024).<br>
-<span>&#8667;</span> Invited Speaker (Supply Chain Security and Resiliency) - Vishal Sharma - Digital & Cyber Series with QUB, Belfast, UK (September 2024).<br>
-<span>&#8667;</span> Invited Speaker (Who’s flying? Taming Drone Swarms and Avoiding Pitfalls of Rogue Behaviour) - Vishal Sharma - International Cyber Expo, London, UK (September 2024).<br>
-<span>&#8667;</span> Exhibitor (RogDron) - Vishal Sharma - International Cyber Expo (September 2024).<br>
-<span>&#8667;</span> Invited Speaker (UAVs for future and disaster scenarios) - Vishal Sharma - eFutures - Net Zero conference, Belfast, UK (September 2024).<br>
-                  <span>&#8667;</span> Tutorial Presenter (Beyond – Crypto: Preparing for the next wave of challenges in Distributed Ledger Technology) - Vishal Sharma, Trung Q Duong, Oluwafemi Olukoya, Teik Guan Tan, Zengpeng Li - IEEE ICBC, Dublin, Ireland (May 2024).<br>
-                  <span>&#8667;</span> Tutorial Contributor (Digital Twins for 6G Communications and Networking) - Hamed Ahmadi, Trung Q Duong, Berk Canberk, Vishal Sharma - IEEE ICC, Kuala Lumpur, Malaysia (December 2023).<br>
-                  <span>&#8667;</span> Panel (Dronachoo - That’s a Nasty Virus You Got!) - The UK and Ireland Drone Summit 2.0 The Evolution and Revolution of Drones, Belfast, UK (November 2023).<br>
-                 <span>&#8667;</span> Invited Speaker (Blockchain, AI and the Fight for Business Data Authenticity) - Frontier Stage: Harnessing Academic Research to Drive Product Development, Belfast, UK (June 2023).<br>
-                 <span>&#8667;</span> Keynote (Securing Smart Computing Devices) - 3rd Emergent Converging Technologies and Biomedical Systems, Solan, India (May 2023).<br>
-                 <span>&#8667;</span> Exhibition (Rogue Drone Detection) - CyberUK, Belfast (April 2023).<br>
-                 <span>&#8667;</span> Participant [Business Pitch] (Rogue Drone Detection) - Cyber Den (CyberUK), Belfast (April 2023).<br>
-                  <span>&#8667;</span> Guest Lecture (Innovating Future Smart Cities) - William J Clinton Leadership Institute , Belfast (March 2023).<br>
-                 <span>&#8667;</span> Guest Lecture (Drone Technology - Penetration Testing and Ethical Hacking) - Pen Testing, QUB, Belfast (February 2023).<br>
-                 <span>&#8667;</span> Presenter (Intelligent, connected and secure smart cities) - Belfast City Council Workshop, Belfast (February 2023).<br>
-                 <span>&#8667;</span> Presenter (Secure and autonomous computing for systems and networks) - CSIT IAB, Belfast (January 2023).<br>
-                
-                  <span>&#8667;</span> Panel (The Role of Safe and Secure Communication in Advanced Air Mobility) - Advanced Air Mobility: Future Challenges and Opportunities: An Informative Summit on the Future of Advanced Air Mobility in Connected Societies, Belfast (November 2022).<br>
-                  <span>&#8667;</span> Invited talk (Case Study: Expanding business horizons with digital twins: from improvements to innovations) - Catalyst Inc, United Kingdom (October 2022).<br>
-                  <span>&#8667;</span> Invited talk (Representing Advanced Research and Engineering Centre (PwC-ARC)) - AIQ (September 2022).<br>
-                  <span>&#8667;</span> Panel (Digital Twin) - 23rd IEEE International Symposium on a World of Wireless, Mobile and Multimedia Networks, Belfast (June 2022).<br>
-                  <span>&#8667;</span> Panel (Digital Twin) - AI at Queen's, Belfast (May 2022).<br>
-                  <span>&#8667;</span> Invited talk (Misbehaviour Detection in Drone Swarms) - Research Seminar - Sanjivani Group of Institutes, India (May 2022).<br>
-                  <span>&#8667;</span> Invited talk (Research as a Career: Understanding Academia - Industry Cooperation) - AGC, India (April 2022).<br>
-                  <span>&#8667;</span> Invited talk (Online Faculty Development Program on Data: From synthesis and analysis to connect and security) - Amity University, India (April 2022).<br>
-                  <span>&#8667;</span> Invited talk (Misbehaviour Detection in Drone Swarms) - The Third International Workshop on DroneCom held in conjunction with ACM Mobicom, US, (April 2022).<br>
-                  <span>&#8667;</span> Invited talk (Abusive Modeling: An approach to evaluate blockchain, future networks, and beyond) - International Advanced Computing Conference, Malta (December 2021).<br>
-                  <span>&#8667;</span> Invited talk (Abusive modeling for blockchain) - Expert Lecture Series, Shandong University, China (December 2021).<br>
-                  <span>&#8667;</span> Judging Panel (IEEEDuino Contest) - Region 8, (December 2021).<br>
-                   <span>&#8667;</span> Project reviewer (Anonymous) - Dutch Research Council (NWO), (October 2021).<br>
-                   <span>&#8667;</span> Examiner (Let's Read) - Sri Lanka (SLTC IEEE Student Chapter), (April 2021).<br>
-                  <span>&#8667;</span> Session talk (Misbehavior-detection for IoT-Embedded Cyber Physical System: UAVs as IoT devices) - Third Virtual Conference on Data Science – A Future of Digital Transformation (DSDT-20), VIT, India (June 2020).<br>
-<span>&#8667;</span> Expert talk on HCAPN-Model and formal analysis at Soonchunhyang University, Asan-si, South Korea. (June 2018).<br>
-<span>&#8667;</span> Program Review on Behaviour Rule Specification-based Misbehaviour Detection in Cyber Physical Systems at AFOSR, Virginia, US (May 2018).<br>
-<span>&#8667;</span> Expert talk on Blockchain-based DMM at Soonchunhyang University, Asan-si, South Korea (September 2017).<br>
-<span>&#8667;</span> Expert talk on Mobile Network Security- 5G Perspective at Soonchunhyang University, Asan-si, South Korea (April 2017).<br>
-<span>&#8667;</span> Session on the design of mini-UAVs at Soonchunhyang University, Asan-si, South Korea (February 2017).<br>
-<span>&#8667;</span> Session on the development of 5G BSNs and IoT networks at Soonchunhyang University, Asan-si, South Korea (January 2017).<br>
-<span>&#8667;</span> Expert talk on Designing a system model for engineering applications at Thapar University, Patiala, Punjab, India (June 2016).<br>
-<span>&#8667;</span> Session on exploring NS-2/NS-3 for wireless network simulations at DCRUST, Murthal-Sonepat, Haryana, India (June 2015).<br>
-<span>&#8667;</span> Session on NS-2 training at ACET, Amritsar, Punjab, India (April 2015).<br>
-<span>&#8667;</span> Session on simulation based network implementation using NS-2 at Punjab Institute of Technology (PIT, PTU), India (March 2014).<br>
-<span>&#8667;</span> A talk on wireless networking and simulations with UAVs in association with IEEE and ACM student chapter at Thapar University, India (March 2014).
-                  
-                </p>    
-                       
-            </div>
+    <section id="about-info" class="py-1" style="background-color: #f3f4f6">
+  <div class="container text-justify">
+    <div>
+        
+      <div class="testimonial bg-primary p-2" style="background-color: #f3f4f6">
+              <p class="l-heading"  style="text-align: center"><span class="text-primary">Outreach Activities</span><br><br></p>
+        <!-- Year: 2025 -->
+        <div class="year-banner" style="background-color: #f3f4f6">2025</div>
+        <ul class="outreach-list">
+          <li><strong>Invited Speaker</strong> – Pint of Science: A Pint of Drones, Agentic AI and LoRaWAN, Belfast, NI, UK (May 2025)</li>
+          <li><strong>Exhibitor</strong> – Balmoral Show: Supply Chain Security and Resilience with Agentic AI, Lisburn, UK (May 2025)</li>
+          <li><strong>Keynote</strong> – P2A Green Hackathon: Perspectives from the UK, Danang, Vietnam (April 2025)</li>
+          <li><strong>Invited Speaker</strong> – DroneVirus – What Made My Drones Go Rogue?, NI Science Festival, Belfast, NI, UK (Feb 2025)</li>
+          <li><strong>Chair</strong> – DLT Policy & QUB Blockchain Initiative, Belfast, NI, UK (Feb 2025)</li>
+        </ul>
+
+        <!-- Year: 2024 -->
+        <div class="year-banner" style="background-color: #f3f4f6">2024</div>
+        <ul class="outreach-list">
+          <li><strong>Panelist</strong> – Frontier AI Safety & Policy Panel, MIT, Boston, USA (Oct 2024)</li>
+          <li><strong>Invited Speaker</strong> – Supply Chain Security, Digital & Cyber Series with QUB, Belfast, UK (Sep 2024)</li>
+          <li><strong>Invited Speaker</strong> – Who’s Flying? Drone Swarms, International Cyber Expo, London, UK (Sep 2024)</li>
+          <li><strong>Exhibitor</strong> – RogDron, International Cyber Expo, London (Sep 2024)</li>
+          <li><strong>Invited Speaker</strong> – UAVs for Disaster Scenarios, eFutures Net Zero, Belfast (Sep 2024)</li>
+          <li><strong>Tutorial Presenter</strong> – Beyond Crypto: Next-Gen DLT Challenges, IEEE ICBC, Dublin, Ireland (May 2024)</li>
+        </ul>
+
+        <!-- Year: 2023 -->
+         <div class="year-banner" style="background-color: #f3f4f6">2023</div>
+        <ul class="outreach-list">
+          <li><strong>Tutorial Contributor</strong> – Digital Twins for 6G, IEEE ICC, Kuala Lumpur, Malaysia (Dec 2023)</li>
+          <li><strong>Panelist</strong> – Dronachoo – That’s a Nasty Virus You Got!, Drone Summit 2.0, Belfast (Nov 2023)</li>
+          <li><strong>Invited Speaker</strong> – Blockchain, AI & Business Data, Frontier Stage, Belfast (Jun 2023)</li>
+          <li><strong>Keynote</strong> – Securing Smart Devices, ECTBS Conference, Solan, India (May 2023)</li>
+          <li><strong>Exhibition</strong> – Rogue Drone Detection, CyberUK, Belfast (Apr 2023)</li>
+          <li><strong>Pitch Participant</strong> – Rogue Drone Detection, Cyber Den @ CyberUK, Belfast (Apr 2023)</li>
+          <li><strong>Guest Lecture</strong> – Smart Cities, Clinton Leadership Institute, Belfast (Mar 2023)</li>
+          <li><strong>Guest Lecture</strong> – Drone Tech & Pen Testing, QUB, Belfast (Feb 2023)</li>
+          <li><strong>Presenter</strong> – Smart Cities, Belfast City Council Workshop (Feb 2023)</li>
+          <li><strong>Presenter</strong> – Autonomous Computing, CSIT IAB, Belfast (Jan 2023)</li>
+        </ul>
+
+        <!-- Year: 2022 -->
+        <div class="year-banner" style="background-color: #f3f4f6">2022</div>
+        <ul class="outreach-list">
+          <li><strong>Panelist</strong> – Safe Communication in Advanced Air Mobility, AAM Summit, Belfast (Nov 2022)</li>
+          <li><strong>Invited Talk</strong> – Digital Twins & Innovation, Catalyst Inc, UK (Oct 2022)</li>
+          <li><strong>Invited Talk</strong> – Representing PwC-ARC, AIQ (Sep 2022)</li>
+          <li><strong>Panelist</strong> – Digital Twin, IEEE WoWMoM, Belfast (Jun 2022)</li>
+          <li><strong>Panelist</strong> – Digital Twin, AI at Queen’s, Belfast (May 2022)</li>
+          <li><strong>Invited Talk</strong> – Drone Swarm Misbehaviour Detection, Sanjivani Institute, India (May 2022)</li>
+          <li><strong>Invited Talk</strong> – Research Career Paths, AGC, India (Apr 2022)</li>
+          <li><strong>Invited Talk</strong> – Faculty Development Program on Data, Amity University, India (Apr 2022)</li>
+          <li><strong>Invited Talk</strong> – DroneCom Workshop @ ACM Mobicom, US (Apr 2022)</li>
+        </ul>
+
+        <!-- Year: 2021 -->
+        <div class="year-banner" style="background-color: #f3f4f6">2021</div>
+        <ul class="outreach-list">
+          <li><strong>Invited Talk</strong> – Abusive Modeling in Blockchain, IACC Malta (Dec 2021)</li>
+          <li><strong>Invited Talk</strong> – Expert Series, Shandong University, China (Dec 2021)</li>
+          <li><strong>Judge</strong> – IEEEDuino Contest, Region 8 (Dec 2021)</li>
+          <li><strong>Reviewer</strong> – Project Reviewer (Anonymous), Dutch Research Council (Oct 2021)</li>
+          <li><strong>Examiner</strong> – Let's Read, SLTC IEEE Student Chapter, Sri Lanka (Apr 2021)</li>
+        </ul>
+
+        
+        <!-- Years: 2017–2020 -->
+        <div class="year-banner" style="background-color: #f3f4f6">2017-2020</div>
+        <ul class="outreach-list">
             
-           <br><br><br><br><br>
-        </div>
-       
+          <li><strong>Session Talk</strong> – Misbehavior Detection for IoT UAVs, DSDT-20, VIT, India (Jun 2020)</li>
+          <li><strong>Expert Talk</strong> – HCAPN Model, Soonchunhyang Univ., South Korea (Jun 2018)</li>
+          <li><strong>Review</strong> – CPS Misbehavior Detection, AFOSR, Virginia, US (May 2018)</li>
+          <li><strong>Expert Talk</strong> – Blockchain-based DMM, Soonchunhyang Univ. (Sep 2017)</li>
+          <li><strong>Expert Talk</strong> – 5G Mobile Network Security, South Korea (Apr 2017)</li>
+          <li><strong>Session</strong> – Mini-UAV Design, South Korea (Feb 2017)</li>
+          <li><strong>Session</strong> – 5G BSNs & IoT Networks, South Korea (Jan 2017)</li>
+        </ul>
+
+        <!-- Years: 2016–2014 -->
+       <div class="year-banner" style="background-color: #f3f4f6">2014-2016</div>
+        <ul class="outreach-list">
+          <li><strong>Expert Talk</strong> – System Modeling for Engineering, Thapar Univ., India (Jun 2016)</li>
+          <li><strong>Session</strong> – NS-2/NS-3 Simulations, DCRUST, India (Jun 2015)</li>
+          <li><strong>Session</strong> – NS-2 Training, ACET, Amritsar, India (Apr 2015)</li>
+          <li><strong>Session</strong> – Network Simulation, PIT (PTU), India (Mar 2014)</li>
+          <li><strong>Talk</strong> – UAV Wireless Networking, IEEE/ACM Chapter, Thapar Univ., India (Mar 2014)</li>
+        </ul>
+
+      </div>
     </div>
+  </div>
 </section>
-    
+
   
-<footer id="main-footer" style="width: 100%; bottom: 0; left: 0">
-    <p> Copyright &copy; <script type="text/javascript">document.write( new Date().getFullYear() );</script>. Vishal Sharma. All Rights Reserved.</p>
+  <style>
+    
+        .footer-banner {
+  background-color: #004466;  /* deep teal */
+  color: #e0eaf1;             /* light bluish text */
+  padding: 3rem 1.5rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1 1 300px; /* flexible width but min 300px */
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #66b2ff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #e0eaf1;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #a8d0ff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #336699;
+  font-size: 0.9rem;
+  color: #a8c6dc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-section {
+    max-width: 100%;
+  }
+  
+  iframe {
+    height: 200px;
+  }
+}
+
+    </style>
+  
+   <footer id="main-footer" style="background-color: #003f4d; color: #e0eaf1; padding: 3rem 1.5rem; font-family: Arial, sans-serif;">
+  <div class="footer-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between;">
+
+    <div class="footer-section" style="flex: 1 1 250px; min-width: 250px;">
+      <h3 style="margin-bottom: 1rem; color: #a4cfe0;">Address</h3>
+       
+                Computer Science Building <br>
+                16A Malone Road<br>
+                Belfast, BT9 5BN<br>
+                Northern Ireland, UK <br>
+    </div>
+
+    <div class="footer-section" style="flex: 1 1 300px; min-width: 300px;">
+      <h3 style="margin-bottom: 1rem; color: #a4cfe0;">Location</h3>
+      <!-- Replace the iframe src with your actual map location -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2312.188623892509!2d-5.93804068454671!3d54.58305038025675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sComputer%20Science%20Building%2016A%20Malone%20Road%20Belfast%20BT9%205BN!5e0!3m2!1sen!2suk!4v1599392541949!5m2!1sen!2suk"
+        style="width: 100%; height: 180px; border: none; border-radius: 8px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="footer-section" style="flex: 1 1 250px; min-width: 250px;">
+      <h3 style="margin-bottom: 1rem; color: #a4cfe0;">Contact</h3>
+      <p>Email: <a href="mailto:#" style="color: #7ec8e3; text-decoration: none;"> v [dot] &lt;lastname&gt; [at] qub [dot] ac [dot] uk</a></p>
+       <p>Website: <a href="https://vishalqub.github.io" target="_blank" style="color: #7ec8e3; text-decoration: none;">vishalqub.github.io</a></p>
+    </div>
+
+  </div>
+  <div style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #89b3d1;">
+    &copy; <script>document.write(new Date().getFullYear());</script> Vishal Sharma. All Rights Reserved.
+  </div>
 </footer>
+
 </body>
 </html>

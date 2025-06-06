@@ -11,7 +11,9 @@
     <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/mobile.css">
     <title>Vishal Sharma | PhD</title>
     <link rel = "icon" href ="./img/toplogo.png" type = "image/x-icon"> 
+   
 </head>
+ 
     <style>
 
 
@@ -143,74 +145,128 @@ function closeNav() {
   <div class="clr"></div>
     
  
-    
- 
-     <div class="clr"></div>
-<section id="about-info" class="py-1" >
-    <div class="container" >
-        <div>
-            <p class="l-heading"><span class="text-primary">Associations and Memberships</span></p>
-            <div class="testimonial bg-primary" >
-              <p style="margin-left: 0.5em;padding: 0 0 0 0; text-align: justify"> 
-                  &#8259;IEEE UK and Ireland Diversity, Equity, and Inclusion Committee (Co-Chair)<br>
-&#8259;ACM (Professional)<br>
-&#8259;IEEE (Senior Member)<br>
-&#8259;EAI (Member)<br>
-&#8259;IAENG (Member)<br>
-&#8259;Special Task Force for 6G Mobile Technology (Member)<br>
-&#8259;IEEE ComSoc (Member)<br>
-&#8259;IEEE Internet Technology Policy (Member)<br>
-&#8259;IEEE Blockchain Community (Member)<br>
-&#8259;IEEE VTS-Technical Community on Connected Vehicles (Member)<br>
-&#8259;IEEE Software Defined Networks Community (Member)<br>
-&#8259;IEEE Future Networks Community (Member)
-                </p>    
-                       
-            </div>
-            
-           
-        </div>
-       
+    <style>
+  /* Section background and vertical padding */
+  .custom-section {
+    background-color: #f7fafc; /* Tailwind bg-gray-100 */
+    padding-top: 3rem;  /* py-12 = 3rem */
+    padding-bottom: 3rem;
+  }
+
+  /* Container width + horizontal padding + center */
+  .custom-container {
+    max-width: 80rem; /* max-w-7xl ~ 1280px */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;  /* px-4 */
+    padding-right: 1rem;
+  }
+
+  /* Responsive padding adjustments */
+  @media (min-width: 640px) {
+    .custom-container {
+      padding-left: 1.5rem; /* sm:px-6 */
+      padding-right: 1.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .custom-container {
+      padding-left: 2rem; /* lg:px-8 */
+      padding-right: 2rem;
+    }
+  }
+
+  /* Grid container: 1 column by default, 2 columns from md breakpoint */
+  .custom-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem; /* gap-6 = 24px */
+  }
+  @media (min-width: 768px) {
+    .custom-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Card style */
+  .custom-card {
+    background-color: white; /* bg-white */
+    border-radius: 1rem; /* rounded-2xl = 16px */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+    padding: 1.5rem; /* p-6 = 24px */
+  }
+
+  /* Headings inside cards */
+  .custom-card h3 {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    color: teal; /* text-primary - assuming Tailwind's blue-500 */
+    margin-bottom: 1rem; /* mb-4 */
+  }
+
+  /* List inside cards */
+  .custom-card ul {
+    list-style-type: disc;
+    padding-left: 1.25rem; /* pl-5 = 20px */
+    color: #4a5568; /* text-gray-700 */
+    font-size: 0.875rem; /* text-sm */
+    line-height: 1.5;
+    margin: 0;
+  }
+  .custom-card ul li + li {
+    margin-top: 0.25rem; /* space-y-1 = 4px spacing between li */
+  }
+</style>
+
+<section class="custom-section">
+  <div class="custom-container">
+    <div class="custom-grid">
+      <div class="custom-card">
+        <h3>Associations and Memberships</h3>
+        <ul>
+          <li>IEEE UK and Ireland Diversity, Equity, and Inclusion Committee (Co-Chair)</li>
+          <li>ACM (Professional)</li>
+          <li>IEEE (Senior Member)</li>
+          <li>EAI (Member)</li>
+          <li>IAENG (Member)</li>
+          <li>Special Task Force for 6G Mobile Technology (Member)</li>
+          <li>IEEE ComSoc (Member)</li>
+          <li>IEEE Internet Technology Policy (Member)</li>
+          <li>IEEE Blockchain Community (Member)</li>
+          <li>IEEE VTS-Technical Community on Connected Vehicles (Member)</li>
+          <li>IEEE Software Defined Networks Community (Member)</li>
+          <li>IEEE Future Networks Community (Member)</li>
+        </ul>
+      </div>
+
+      <div class="custom-card">
+        <h3>Editorial Services</h3>
+        <ul>
+          <li>Editor: ICT Express, Elsevier (2021 - Present)</li>
+          <li>Associate Editor: CAAI Transactions on Intelligence Technology (IET) (2019 - Present)</li>
+          <li>Associate Editor: IET Networks (2020 - 2024)</li>
+          <li>Academic Editor: Wireless Communications and Mobile Computing (2020 - 2023)</li>
+          <li>Associate Technical Editor: IEEE Communications Magazine (2019 - 2022)</li>
+          <li>Guest Editor: MIS (Distributed Secure Computing for Smart Mobile IoT Networks 2021)</li>
+          <li>Guest Editor: Sensors (Smart Mobile-Internet of Things (M-IoT))</li>
+          <li>Guest Editor: Future Internet (Machine Learning Advances Applied to Wireless Multi-hop IoT Networks)</li>
+          <li>Guest Editor: MIS (Distributed Secure Computing for Smart Mobile IoT Networks)</li>
+          <li>Guest Editor: Algorithms (Metaheuristic Algorithms in Engineering Optimization Problems)</li>
+          <li>Guest Editor: Future Internet (Advances in Internet of Vehicles (IoV))</li>
+          <li>Guest Editor: IJDSN (Secure and Trust-aware Computing for Drone-assisted/IoT-Sensor Networks)</li>
+          <li>Guest Editor: Drones (Advances in Drone Communications, State-of-the-Art and Architectures)</li>
+          <li>Guest Editor: WCMC (Secure Computation on 4G/5G Enabled Internet-of-Things)</li>
+          <li>Guest Editor: Sensors (Internet of Things for Smart Homes)</li>
+          <li>Guest Editor: Future Internet (Advances in Internet of Vehicles (IoV))</li>
+          <li>Guest Editor: Autosoft (Advances in Security and Privacy Technologies for Forthcoming Smart Systems, Services, Computing, and Networks)</li>
+        </ul>
+      </div>
     </div>
-    </section>
-     <div class="clr"></div>
-<section id="about-info" class="py-1"  style="background-color: aliceblue">
-    <div class="container" style="text-align: justify">
-        <div>
-            <br>
-            <p class="l-heading"><span class="text-primary" >Editorial Services</span></p>
-            <div class="testimonial bg-primary"  style="background-color: aliceblue">
-              <p style="margin-left: 0.5em;padding: 0 0 0 0; text-align: justify-all">
-                  &#8259;Editor: ICT Express, Elsevier (2021 - Present)<br>
-&#8259;Associate Editor: IET Networks (2020 - Present)<br>
-                  &#8259;Associate Editor: CAAI Transactions on Intelligence Technology (IET) (2019 - Present)<br>
-                  &#8259;Academic Editor: Wireless Communications and Mobile Computing (2020 - 2023)<br>             
-&#8259;Associate Technical Editor: IEEE Communications Magazine (2019 - 2022)<br>
-                  &#8259;Guest Editor: MIS (Distributed Secure Computing for Smart Mobile IoT Networks 2021)<br>
-                  &#8259;Guest Editor: Sensors (Smart Mobile-Internet of Things (M-IoT)<br>
-&#8259;Guest Editor: Future Internet (Machine Learning Advances Applied to Wireless Multi-hop IoT Networks)<br>
-&#8259;Guest Editor: MIS (Distributed Secure Computing for Smart Mobile IoT Networks)<br>
-&#8259;Guest Editor: Algorithms (Metaheuristic Algorithms in Engineering Optimization Problems)<br>
-&#8259;Guest Editor: Future Internet (Advances in Internet of Vehicles (IoV))<br>                  
-&#8259;Guest Editor: IJDSN (Secure and Trust-aware Computing for Drone-assisted/IoT-Sensor Networks)<br>
-&#8259;Guest Editor: Drones (Advances in Drone Communications, State-of-the-Art and Architectures)<br>
-&#8259;Guest Editor: WCMC (Secure Computation on 4G/5G Enabled Internet-of-Things)<br>
-&#8259;Guest Editor: Sensors (Internet of Things for Smart Homes)<br>
-&#8259;Guest Editor: Future Internet (Advances in Internet of Vehicles (IoV))<br>
-&#8259;Guest Editor: Autosoft (Advances in Security and Privacy Technologies for Forthcoming Smart Systems, Services, Computing, and Networks)
-                  
-                </p>    
-                       
-            </div>
-            
-           
-        </div>
-       
-    </div>
+  </div>
 </section>
 
-  
-     <div class="clr"></div>
+    
+    <!--
 <section id="about-info" class="py-1" >
     <div class="container" >
         <div>
@@ -286,8 +342,109 @@ function closeNav() {
        
     </div>
 </section>
-<footer id="main-footer" style="width: 100%; bottom: 0; left: 0">
-    <p> Copyright &copy; <script type="text/javascript">document.write( new Date().getFullYear() );</script>. Vishal Sharma. All Rights Reserved.</p>
+-->  
+<style>
+    
+        .footer-banner {
+  background-color: #004466;  /* deep teal */
+  color: #e0eaf1;             /* light bluish text */
+  padding: 3rem 1.5rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1 1 300px; /* flexible width but min 300px */
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #66b2ff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #e0eaf1;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #a8d0ff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #336699;
+  font-size: 0.9rem;
+  color: #a8c6dc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-section {
+    max-width: 100%;
+  }
+  
+  iframe {
+    height: 200px;
+  }
+}
+
+    </style>
+  
+   <footer id="main-footer" style="background-color: #003f4d; color: #e0eaf1; padding: 3rem 1.5rem; font-family: Arial, sans-serif;">
+  <div class="footer-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between;">
+
+    <div class="footer-section" style="flex: 1 1 250px; min-width: 250px;">
+      <h3 style="margin-bottom: 1rem; color: #a4cfe0;">Address</h3>
+       
+                Computer Science Building <br>
+                16A Malone Road<br>
+                Belfast, BT9 5BN<br>
+                Northern Ireland, UK <br>
+    </div>
+
+    <div class="footer-section" style="flex: 1 1 300px; min-width: 300px;">
+      <h3 style="margin-bottom: 1rem; color: #a4cfe0;">Location</h3>
+      <!-- Replace the iframe src with your actual map location -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2312.188623892509!2d-5.93804068454671!3d54.58305038025675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sComputer%20Science%20Building%2016A%20Malone%20Road%20Belfast%20BT9%205BN!5e0!3m2!1sen!2suk!4v1599392541949!5m2!1sen!2suk"
+        style="width: 100%; height: 180px; border: none; border-radius: 8px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="footer-section" style="flex: 1 1 250px; min-width: 250px;">
+      <h3 style="margin-bottom: 1rem; color: #a4cfe0;">Contact</h3>
+      <p>Email: <a href="mailto:#" style="color: #7ec8e3; text-decoration: none;"> v [dot] &lt;lastname&gt; [at] qub [dot] ac [dot] uk</a></p>
+       <p>Website: <a href="https://vishalqub.github.io" target="_blank" style="color: #7ec8e3; text-decoration: none;">vishalqub.github.io</a></p>
+    </div>
+
+  </div>
+  <div style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #89b3d1;">
+    &copy; <script>document.write(new Date().getFullYear());</script> Vishal Sharma. All Rights Reserved.
+  </div>
 </footer>
+
 </body>
 </html>
